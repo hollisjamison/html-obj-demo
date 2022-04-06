@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Object Demo</title>
+</head>
+<body class="bg-dark">
+  <div class="container" id="main-container">
+    <div class="row g-4 my-auto">
+      <div class="col-6">
+        <div class="col-content">
+          <div class="card bg-light p-4" id="new-contact">
+            <h3 class="card-title">
+              New Contact
+            </h3>
+            <label for="addId" class="form-label my-2">ID:</label>
+            <input type="text" class="form-control" id="addId" placeholder="">
+            <label for="addName" class="form-label my-2 text">Name:</label>
+            <input type="text" class="form-control" id="addName" placeholder="">
+            <label for="addEmail" class="form-label my-2">Email:</label>
+            <input type="email" class="form-control" id="addEmail" placeholder="">
+            <label for="addPhone" class="form-label my-2">Phone:</label>
+            <input type="text" class="form-control" id="addPhone" placeholder="">
+            <label for="addThumbnail" class="form-label my-2">Thumbnail:</label>
+            <input type="text" class="form-control" id="addThumbnail" placeholder="">
+            <button type="button" class="btn btn-primary mt-3 w-50 mx-auto" onclick="addContact()">Create Contact</button>
+        </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="col-content">
+          <div class="card bg-light p-4" id="new-contact">
+            <h3 class="card-title">
+              Edit Contact
+            </h3>
+            <label for="editId" class="form-label my-2">ID:</label>
+            <input type="text" class="form-control" id="editId" placeholder="">
+            <label for="editName" class="form-label my-2">Name:</label>
+            <input type="text" class="form-control" id="editName" placeholder="">
+            <label for="editEmail" class="form-label my-2">Email:</label>
+            <input type="email" class="form-control" id="editEmail" placeholder="">
+            <label for="editPhone" class="form-label my-2">Phone:</label>
+            <input type="text" class="form-control" id="editPhone" placeholder="">
+            <label for="editThumbnail" class="form-label my-2">Thumbnail:</label>
+            <input type="text" class="form-control" id="editThumbnail" placeholder="">
+            <button type="button" class="btn btn-primary mt-3 w-50 mx-auto" onclick="editContact()">Edit Contact</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="col-content">
+          <div class="col card bg-light p-4" id="contact-list">
+            <h3 class="mx-auto">Contact List</h3>
+            <div class="container">
+              <div class="row g-4 mx-auto" id="contacts-container">
+                
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary mt-3 w-25 mx-auto" onclick="refreshContacts()">Refresh</button>
+          </div>
+        </div>
+      </div>
+  </div>
+<script src="./script.js"></script>
+</body>
+</html>
